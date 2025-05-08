@@ -47,8 +47,6 @@ namespace prioritized_qp_proxsuite{
   }
 
   bool Task::solve(bool forceColdStart){
-    if(forceColdStart) this->solver_->settings.initial_guess = proxsuite::proxqp::InitialGuessStatus::NO_INITIAL_GUESS;
-    else this->solver_->settings.initial_guess = proxsuite::proxqp::InitialGuessStatus::EQUALITY_CONSTRAINED_INITIAL_GUESS;
     this->solver_->solve();
     return true;
   }

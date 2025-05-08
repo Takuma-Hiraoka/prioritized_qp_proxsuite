@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   prioritized_qp_base)
 
 catkin_package(
-  INCLUDE_DIRS include ${proxsuite_INCLUDE_DIRS}
+  INCLUDE_DIRS include
   LIBRARIES prioritized_qp_proxsuite
   CATKIN_DEPENDS prioritized_qp_base
 )
